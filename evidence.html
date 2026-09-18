@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Label Evidence | Nurtre</title>
+  <meta name="description" content="What Nurtre's four evidence labels mean, how we choose them, and every source behind the site, checked and linked.">
+  <meta name="theme-color" content="#f8f4ec">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/evidence.css">
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/evidence.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <site-header current="evidence"></site-header>
+
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero page-hero--center hero-glow" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li aria-current="page">Evidence</li>
+            </ol>
+          </nav>
+          <div class="page-hero__art">
+            <spot-art name="magnifier" tone="sky"></spot-art>
+            <spot-art name="leaf" tone="sage"></spot-art>
+            <spot-art name="sparkle" tone="butter"></spot-art>
+          </div>
+          <p class="eyebrow">Evidence</p>
+          <h1 id="page-title">Not every finding is equally strong. <span class="text-accent">We tell you which is which.</span></h1>
+          <p class="lead">
+            Health statements on Nurtre carry one of four labels, from firm clinical guidance to early ideas. Here’s what
+            each label means, how we choose it, and every source we rely on.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="#labels">The four labels</a>
+            <a class="btn btn--secondary" href="#sources">All sources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page-toc" aria-label="On this page">
+      <div class="container">
+        <ul class="page-toc__list" role="list">
+          <li><a href="#labels">The four labels</a></li>
+          <li><a href="#choosing">How we choose a label</a></li>
+          <li><a href="#limits">Limits</a></li>
+          <li><a href="#sources">All sources</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The four labels -->
+    <section class="section" id="labels" aria-labelledby="labels-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">The four labels</p>
+          <h2 id="labels-title">From strongest to earliest</h2>
+          <p class="section-header__text">
+            Each label has its own marker shape, so you can tell them apart without relying on color.
+          </p>
+        </div>
+
+        <div class="strength-scale" aria-hidden="true">
+          <span>Strongest</span>
+          <span class="strength-scale__bar"></span>
+          <span>Earliest</span>
+        </div>
+
+        <ol class="label-list" role="list">
+          <li class="label-row">
+            <div class="label-row__tag">
+              <span class="evidence-tag evidence-tag--established">Established guidance</span>
+              <span class="label-row__shape">Filled circle</span>
+            </div>
+            <div class="label-row__detail">
+              <p class="label-row__label">What it means</p>
+              <p>Reflected in major clinical practice guidelines and supported by consistent evidence. Expert panels have reviewed the research and agree.</p>
+              <p class="label-row__label">How to read it</p>
+              <p>A safe foundation to act on, together with your care team.</p>
+            </div>
+            <blockquote class="label-row__example">
+              <p class="label-row__label">Example on Nurtre</p>
+              <p>“Fiber slows digestion, so the sugar from a meal enters your blood more gradually and you stay full longer.”</p>
+              <a href="foods.html#fiber">Foods: Why fiber matters</a>
+            </blockquote>
+          </li>
+
+          <li class="label-row">
+            <div class="label-row__tag">
+              <span class="evidence-tag evidence-tag--research">Research finding</span>
+              <span class="label-row__shape">Half-filled circle</span>
+            </div>
+            <div class="label-row__detail">
+              <p class="label-row__label">What it means</p>
+              <p>Seen in controlled studies, such as randomized trials or meta-analyses, but not yet strong or consistent enough to be standard guidance.</p>
+              <p class="label-row__label">How to read it</p>
+              <p>Promising and worth discussing, but results may be small, mixed, or measured on lab values rather than outcomes you’d notice.</p>
+            </div>
+            <blockquote class="label-row__example">
+              <p class="label-row__label">Example on Nurtre</p>
+              <p>“Better lab numbers don’t always mean a better chance of having a baby.”</p>
+              <a href="supplements.html#conceive">Supplements: Trying to conceive</a>
+            </blockquote>
+          </li>
+
+          <li class="label-row">
+            <div class="label-row__tag">
+              <span class="evidence-tag evidence-tag--association">Association</span>
+              <span class="label-row__shape">Hollow circle</span>
+            </div>
+            <div class="label-row__detail">
+              <p class="label-row__label">What it means</p>
+              <p>A link observed in population or observational studies. Two things tend to go together, but that doesn’t show that one causes the other.</p>
+              <p class="label-row__label">How to read it</p>
+              <p>Useful for spotting patterns. Other factors could explain the link.</p>
+            </div>
+            <blockquote class="label-row__example">
+              <p class="label-row__label">Example on Nurtre</p>
+              <p>“Studies have found that people with PCOS tend to eat less fiber, and lower intake has been linked with higher insulin resistance.”</p>
+              <a href="foods.html#fiber">Foods: Why fiber matters</a>
+            </blockquote>
+          </li>
+
+          <li class="label-row">
+            <div class="label-row__tag">
+              <span class="evidence-tag evidence-tag--emerging">Emerging hypothesis</span>
+              <span class="label-row__shape">Dashed circle</span>
+            </div>
+            <div class="label-row__detail">
+              <p class="label-row__label">What it means</p>
+              <p>An early idea based on limited or preliminary research, such as small studies, lab work, or a plausible mechanism.</p>
+              <p class="label-row__label">How to read it</p>
+              <p>Worth watching, not acting on. Many early ideas don’t hold up in larger studies.</p>
+            </div>
+            <blockquote class="label-row__example">
+              <p class="label-row__label">Example on Nurtre</p>
+              <p>“Cinnamon supplements are being studied for blood sugar in PCOS, but amounts in food are much smaller.”</p>
+              <a href="foods.html#library">Foods: Cinnamon</a>
+            </blockquote>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- How we choose -->
+    <section class="section section--alt" id="choosing" aria-labelledby="choosing-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How we choose a label</p>
+          <h2 id="choosing-title">The type of evidence decides the label</h2>
+          <p class="section-header__text">
+            We start from the strongest kind of evidence available for a statement and work down.
+          </p>
+        </div>
+
+        <ol class="ladder" role="list">
+          <li class="ladder__step">
+            <span class="ladder__num" aria-hidden="true">1</span>
+            <div>
+              <h3>Is it in a major clinical guideline?</h3>
+              <p>For example, the 2023 International PCOS Guideline or World Health Organization guidance.</p>
+            </div>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="ladder__step">
+            <span class="ladder__num" aria-hidden="true">2</span>
+            <div>
+              <h3>Do controlled trials or systematic reviews support it?</h3>
+              <p>Studies that compare a treatment with a control group, or reviews that pool many of them.</p>
+            </div>
+            <span class="evidence-tag evidence-tag--research">Research finding</span>
+          </li>
+          <li class="ladder__step">
+            <span class="ladder__num" aria-hidden="true">3</span>
+            <div>
+              <h3>Is it a pattern seen in observational studies?</h3>
+              <p>Studies that observe groups of people without changing what they do.</p>
+            </div>
+            <span class="evidence-tag evidence-tag--association">Association</span>
+          </li>
+          <li class="ladder__step">
+            <span class="ladder__num" aria-hidden="true">4</span>
+            <div>
+              <h3>Is it based on early or limited work?</h3>
+              <p>Small studies, lab or animal research, or a mechanism that makes sense but hasn’t been tested well.</p>
+            </div>
+            <span class="evidence-tag evidence-tag--emerging">Emerging hypothesis</span>
+          </li>
+        </ol>
+
+        <ul class="tip-list rules" role="list">
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🏷️</span>
+            <h3>We label the statement, not the source</h3>
+            <p>A strong review can still include weak findings. Each claim gets the label its own evidence supports.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">⚖️</span>
+            <h3>Mixed evidence gets the lower label</h3>
+            <p>When studies disagree, we choose the more cautious label rather than the most exciting result.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🎯</span>
+            <h3>Outcomes matter more than lab values</h3>
+            <p>A change in a blood test isn’t the same as feeling better or having a baby. We say which one a study measured.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">📏</span>
+            <h3>Nutrition numbers aren’t labeled</h3>
+            <p>Values like grams of fiber are measurements from USDA data, not claims, so they don’t carry an evidence label.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Limits -->
+    <section class="section" id="limits" aria-labelledby="limits-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Limits</p>
+          <h2 id="limits-title">What our labels can’t do</h2>
+        </div>
+
+        <ul class="tip-list" role="list">
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🩺</span>
+            <h3>They aren’t medical advice</h3>
+            <p>Evidence describes groups of people. Your doctor or dietitian can tell you what applies to you.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🔄</span>
+            <h3>Evidence changes</h3>
+            <p>New studies can move a statement up or down. Each page shows when it was last updated.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🧭</span>
+            <h3>Labels involve judgment</h3>
+            <p>We follow the steps above, but deciding where a finding fits is still a judgment call, and experts can disagree.</p>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🔍</span>
+            <h3>We check every citation</h3>
+            <p>Each source below was checked against its publisher, CrossRef, or PubMed in September 2026, and links to the original.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Next steps -->
+    <section class="section section--alt" aria-labelledby="next-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">See the labels in use</p>
+          <h2 id="next-title">Explore the evidence by topic</h2>
+        </div>
+        <page-cards pages="pcos,foods,supplements"></page-cards>
+      </div>
+    </section>
+
+    <!-- All sources -->
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">All sources</p>
+          <h2 id="sources-title">Every source behind Nurtre</h2>
+          <p class="section-header__text">
+            Grouped by type, with what we use each one for and which pages cite it. Filter to see the sources for one page.
+          </p>
+        </div>
+
+        <div class="source-filter">
+          <div class="chip-list chip-list--start" role="group" aria-label="Filter sources by page" data-source-filters></div>
+          <p class="library__count" aria-live="polite" data-source-count></p>
+        </div>
+
+        <div data-source-groups></div>
+
+        <p class="sources__note source-footnote">This page is for education and doesn't replace advice from your doctor or dietitian. Last updated September 2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

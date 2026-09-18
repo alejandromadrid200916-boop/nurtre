@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" fill="none">
+  <!-- Backdrop -->
+  <path d="M250 20c110 0 212 56 222 150 10 96-80 160-214 164C120 338 12 290 8 180 4 80 130 20 250 20Z" fill="#E2ECEF"/>
+
+  <!-- Moon & stars -->
+  <circle cx="378" cy="86" r="34" fill="#F2CF63"/>
+  <circle cx="396" cy="74" r="30" fill="#E2ECEF"/>
+  <path d="M300 60l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#F2CF63"/>
+  <path d="M430 150l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5Z" fill="#8E86B5"/>
+  <circle cx="110" cy="84" r="4" fill="#F2CF63"/>
+  <circle cx="160" cy="54" r="3" fill="#8E86B5"/>
+
+  <!-- Zzz -->
+  <g fill="#8E86B5" font-family="Manrope, Arial, sans-serif" font-weight="800">
+    <text x="196" y="160" font-size="22">z</text>
+    <text x="218" y="134" font-size="30">z</text>
+    <text x="248" y="102" font-size="40">Z</text>
+  </g>
+
+  <!-- Bed -->
+  <ellipse cx="244" cy="312" rx="190" ry="10" fill="#1D3A2C" opacity=".07"/>
+  <rect x="56" y="150" width="32" height="156" rx="12" fill="#A8744C"/>
+  <rect x="80" y="270" width="340" height="26" rx="9" fill="#C99368"/>
+  <rect x="96" y="290" width="12" height="18" rx="4" fill="#A8744C"/>
+  <rect x="396" y="290" width="12" height="18" rx="4" fill="#A8744C"/>
+  <rect x="84" y="240" width="332" height="36" rx="12" fill="#FFFFFF"/>
+  <ellipse cx="136" cy="232" rx="48" ry="18" fill="#FCFAF5" stroke="#E3DCCD" stroke-width="2"/>
+
+  <!-- Sleeper -->
+  <path d="M118 208c-4-24 10-38 26-38 18 0 30 12 28 32-8-8-18-12-28-10-12 2-20 8-26 16Z" fill="#6B3A26"/>
+  <circle cx="146" cy="210" r="24" fill="#E6B894"/>
+  <path d="M124 206c0-20 12-30 24-30 16 0 26 10 24 26-10-10-20-12-30-8-8 3-14 7-18 12Z" fill="#6B3A26"/>
+  <path d="M136 214q5 4 10 0M152 214q5 4 10 0" stroke="#3A2A22" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M143 223q5 3 10 0" stroke="#3A2A22" stroke-width="2.2" stroke-linecap="round"/>
+  <ellipse cx="134" cy="222" rx="4" ry="2.5" fill="#E48A6A" opacity=".5"/>
+  <ellipse cx="162" cy="222" rx="4" ry="2.5" fill="#E48A6A" opacity=".5"/>
+
+  <!-- Blanket -->
+  <path d="M166 230c40-30 150-34 236-24 14 2 20 14 16 34v34H166Z" fill="#97B094"/>
+  <path d="M166 236c50-26 150-30 248-20" stroke="#E8EFE4" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#B8CEB4">
+    <circle cx="230" cy="256" r="5"/><circle cx="276" cy="248" r="5"/><circle cx="322" cy="258" r="5"/>
+    <circle cx="368" cy="248" r="5"/><circle cx="252" cy="268" r="4"/><circle cx="346" cy="268" r="4"/>
+  </g>
+</svg>

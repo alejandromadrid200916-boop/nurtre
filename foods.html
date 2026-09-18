@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foods for PCOS | Nurtre</title>
+  <meta name="description" content="Browse nearly 100 whole foods with protein, carbs, fat, and fiber per serving from USDA data, plus why fiber matters for PCOS and how to choose less processed foods.">
+  <meta name="theme-color" content="#f8f4ec">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/foods.css">
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/foods.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <site-header current="foods"></site-header>
+
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero page-hero--center hero-glow" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li aria-current="page">Foods</li>
+            </ol>
+          </nav>
+          <div class="page-hero__art">
+            <spot-art name="apple" tone="peach"></spot-art>
+            <spot-art name="basket" tone="butter"></spot-art>
+            <spot-art name="leaf" tone="sage"></spot-art>
+          </div>
+          <p class="eyebrow">Foods</p>
+          <h1 id="page-title">There’s no perfect PCOS food. <span class="text-accent">Variety is what counts.</span></h1>
+          <p class="lead">
+            Browse nearly 100 everyday whole foods, from fish, eggs, and beans to vegetables, nuts, and spices. See what a
+            typical serving gives you, how much fiber it has, and simple ways to add it to your meals.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="#library">Browse foods</a>
+            <a class="btn btn--secondary" href="#fiber">Why fiber matters</a>
+          </div>
+          <p class="page-hero__note">
+            <span class="page-hero__note-icon" aria-hidden="true">📊</span>
+            <span>
+              <strong>Numbers come from USDA FoodData Central</strong> and are rounded. They're a helpful guide, not
+              something to count. Brands, ripeness, and cooking methods all change the exact values.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page-toc" aria-label="On this page">
+      <div class="container">
+        <ul class="page-toc__list" role="list">
+          <li><a href="#library">Food guide</a></li>
+          <li><a href="#fiber">Fiber</a></li>
+          <li><a href="#processed">Whole vs. processed</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Food guide -->
+    <section class="section" id="library" aria-labelledby="library-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Food guide</p>
+          <h2 id="library-title">What’s in everyday whole foods</h2>
+          <p class="section-header__text">
+            Search or filter, then tap any food to see its protein, carbs, fat, and fiber per serving, the vitamins and
+            minerals it’s a good source of, and an easy way to use it.
+          </p>
+        </div>
+
+        <div class="library">
+          <div class="library__toolbar">
+            <div class="search__field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <label class="visually-hidden" for="food-search">Search foods or nutrients</label>
+              <input class="search__input" id="food-search" type="search" placeholder="Search foods or nutrients" autocomplete="off" data-food-search>
+            </div>
+            <div class="chip-list chip-list--start" role="group" aria-label="Filter by food group" data-food-filters></div>
+          </div>
+          <div class="foods-status">
+            <p class="library__count" aria-live="polite" data-food-count></p>
+            <button class="chip" type="button" aria-pressed="false" data-fiber-toggle>
+              <span class="chip__emoji" aria-hidden="true">🌾</span>Good source of fiber only
+            </button>
+          </div>
+
+          <div data-food-groups></div>
+          <p class="library__empty" data-food-empty hidden>No foods match your search. Try another food, nutrient, or filter.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fiber -->
+    <section class="section section--alt" id="fiber" aria-labelledby="fiber-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Fiber</p>
+          <h2 id="fiber-title">Why fiber matters for PCOS</h2>
+          <p class="section-header__text">
+            Fiber is the part of plant foods your body can’t fully digest. With insulin resistance at the center of PCOS,
+            it’s one of the most useful things to look for on your plate.
+          </p>
+        </div>
+
+        <ul class="tip-list" role="list">
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🐢</span>
+            <h3>It slows things down</h3>
+            <p>Fiber slows digestion, so the sugar from a meal enters your blood more gradually and you stay full longer.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">📉</span>
+            <h3>Low intake is linked to insulin resistance</h3>
+            <p>Studies have found that people with PCOS tend to eat less fiber, and lower intake has been linked with higher insulin resistance.</p>
+            <span class="evidence-tag evidence-tag--association">Association</span>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">❤️</span>
+            <h3>Soluble fiber helps cholesterol</h3>
+            <p>The soluble fiber in oats, barley, and beans can lower LDL cholesterol, which matters because PCOS raises long-term heart risk.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="tip-item">
+            <span class="tip-item__emoji" aria-hidden="true">🦠</span>
+            <h3>It feeds your gut bacteria</h3>
+            <p>Gut bacteria break down fiber. Researchers are studying whether this affects hormones and inflammation in PCOS.</p>
+            <span class="evidence-tag evidence-tag--emerging">Emerging hypothesis</span>
+          </li>
+        </ul>
+
+        <div class="fiber-top">
+          <div class="fiber-top__head">
+            <h3>Where to find the most fiber</h3>
+            <p>Grams of fiber in one typical serving, from the food guide above. Beans and lentils fill most of the top spots.</p>
+          </div>
+          <ol class="fiber-rank" role="list" data-fiber-rank></ol>
+        </div>
+
+        <div class="fiber-ways">
+          <h3>Easy ways to add more</h3>
+          <ul class="fiber-ways__list" role="list">
+            <li><span aria-hidden="true">🫘</span>Add beans or lentils to soups, salads, and sauces</li>
+            <li><span aria-hidden="true">🍎</span>Eat fruit whole, with the skin, instead of as juice</li>
+            <li><span aria-hidden="true">🌾</span>Swap one refined grain for a whole grain</li>
+            <li><span aria-hidden="true">🌱</span>Sprinkle chia, flax, or nuts on yogurt or oats</li>
+          </ul>
+          <p class="fiber-ways__note">
+            <span><strong>Go gradually and drink water.</strong> Adding a lot of fiber at once can cause bloating, so give your body time to adjust.</span>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Whole vs processed -->
+    <section class="section" id="processed" aria-labelledby="processed-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Whole vs. processed</p>
+          <h2 id="processed-title">Same food, different forms</h2>
+          <p class="section-header__text">
+            Processing isn’t all bad. Frozen vegetables and canned beans are great choices. The foods to keep occasional
+            are the highly processed ones, which often lose fiber and gain added sugar, salt, or refined fats.
+          </p>
+          <span class="evidence-tag evidence-tag--established">Established guidance</span>
+        </div>
+
+        <div class="spectrum">
+          <div class="chip-list chip-list--start" role="tablist" aria-label="Choose a food" data-processing-tabs></div>
+          <div class="spectrum__panel" id="processing-panel" role="tabpanel" tabindex="0" data-processing-panel></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next steps -->
+    <section class="section section--alt" aria-labelledby="next-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Keep going</p>
+          <h2 id="next-title">Keep learning</h2>
+        </div>
+        <page-cards pages="nutrition,lifestyle,supplements"></page-cards>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="section section--compact foods-sources" aria-labelledby="sources-title">
+      <div class="container sources">
+        <h2 class="sources__title" id="sources-title">Sources</h2>
+        <source-list page="foods"></source-list>
+        <p class="sources__note">This page is for education and doesn't replace advice from your doctor or dietitian. Last updated September 2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

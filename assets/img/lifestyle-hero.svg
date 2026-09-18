@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 500" fill="none">
+  <defs>
+    <clipPath id="hero-blob">
+      <path d="M300 30c120 4 230 70 240 190 10 130-80 250-230 260C150 490 30 420 22 290 14 150 150 24 300 30Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Backdrop, hills, tree -->
+  <path d="M300 30c120 4 230 70 240 190 10 130-80 250-230 260C150 490 30 420 22 290 14 150 150 24 300 30Z" fill="#E8EFE4"/>
+  <g clip-path="url(#hero-blob)">
+    <path d="M0 370c110-50 210-34 300-14 90 20 170-16 260-8v160H0Z" fill="#A9C79B"/>
+    <path d="M0 410c130-30 260-20 380 0 70 12 130 6 180 0v100H0Z" fill="#8DB57F"/>
+    <rect x="78" y="250" width="16" height="150" rx="6" fill="#A8744C"/>
+    <circle cx="86" cy="226" r="50" fill="#8DB57F"/>
+    <circle cx="56" cy="266" r="34" fill="#6E9B63"/>
+    <circle cx="118" cy="264" r="34" fill="#6E9B63"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="452" cy="100" r="34" fill="#F2CF63"/>
+  <g stroke="#F2CF63" stroke-width="5" stroke-linecap="round">
+    <path d="M452 50V38M502 100h12M416 64l-9-9M488 64l9-9M390 100h12"/>
+  </g>
+  <circle cx="442" cy="96" r="3" fill="#8A5A3C"/>
+  <circle cx="462" cy="96" r="3" fill="#8A5A3C"/>
+  <path d="M443 108q9 7 18 0" stroke="#8A5A3C" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Hearts & sparkles -->
+  <path d="M190 120c-4-7-15-4-12 4 2 5 12 12 12 12s10-7 12-12c3-8-8-11-12-4Z" fill="#EE9C78"/>
+  <path d="M352 110c-3-5-11-3-9 3 1 4 9 9 9 9s8-5 9-9c2-6-6-8-9-3Z" fill="#EE9C78" opacity=".8"/>
+  <path d="M378 176l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#F2CF63"/>
+  <path d="M166 186l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5Z" fill="#97B094"/>
+
+  <!-- Blanket -->
+  <path d="M150 400h250l44 54H106Z" fill="#EE9C78"/>
+  <path d="M200 400l-12 54M260 400l-4 54M320 400l4 54M380 400l14 54" stroke="#F6CDB8" stroke-width="6"/>
+
+  <!-- Toy ball -->
+  <circle cx="412" cy="432" r="16" fill="#8E86B5"/>
+  <path d="M396 432h32M412 416c-6 8-6 24 0 32" stroke="#F2CF63" stroke-width="4"/>
+
+  <!-- Mom -->
+  <ellipse cx="275" cy="412" rx="76" ry="24" fill="#2E5A43"/>
+  <ellipse cx="212" cy="420" rx="13" ry="8" fill="#B97A56"/>
+  <ellipse cx="338" cy="420" rx="13" ry="8" fill="#B97A56"/>
+  <path d="M238 410c-2-48 2-86 16-98h42c14 12 18 50 16 98Z" fill="#97B094"/>
+  <circle cx="300" cy="236" r="13" fill="#3A2A22"/>
+  <rect x="266" y="286" width="18" height="30" rx="8" fill="#B97A56"/>
+  <circle cx="275" cy="266" r="27" fill="#B97A56"/>
+  <path d="M247 268c-4-32 15-42 31-41 20 1 28 19 25 41-5-16-15-22-28-22s-23 6-28 22Z" fill="#3A2A22"/>
+  <path d="M261 268q5-5 10 0M279 268q5-5 10 0" stroke="#3A2A22" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M267 279q8 8 16 0Z" fill="#7A3B2E"/>
+  <ellipse cx="257" cy="279" rx="5" ry="3" fill="#E48A6A" opacity=".55"/>
+  <ellipse cx="293" cy="279" rx="5" ry="3" fill="#E48A6A" opacity=".55"/>
+  <path d="M256 320q-32-50-10-118M294 320q32-50 10-118" stroke="#B97A56" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="256" cy="318" r="11" fill="#97B094"/>
+  <circle cx="294" cy="318" r="11" fill="#97B094"/>
+
+  <!-- Baby -->
+  <path d="M262 208l-10 26M288 208l10 26" stroke="#F2CF63" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="251" cy="238" r="7" fill="#D9A57F"/>
+  <circle cx="299" cy="238" r="7" fill="#D9A57F"/>
+  <path d="M252 178l-24-24M298 178l24-24" stroke="#D9A57F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="226" cy="152" r="6.5" fill="#D9A57F"/>
+  <circle cx="324" cy="152" r="6.5" fill="#D9A57F"/>
+  <ellipse cx="275" cy="190" rx="27" ry="26" fill="#F2CF63"/>
+  <path d="M275 186c-2.5-4-8-2.5-7 1.5.6 2.6 7 6.5 7 6.5s6.4-3.9 7-6.5c1-4-4.5-5.5-7-1.5Z" fill="#EE9C78"/>
+  <circle cx="275" cy="146" r="22" fill="#D9A57F"/>
+  <path d="M268 126q7-13 15-2" stroke="#6B3A26" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="267" cy="146" r="2.6" fill="#3A2A22"/>
+  <circle cx="283" cy="146" r="2.6" fill="#3A2A22"/>
+  <path d="M269 155q6 8 12 0Z" fill="#7A3B2E"/>
+  <ellipse cx="261" cy="154" rx="4" ry="2.5" fill="#E48A6A" opacity=".55"/>
+  <ellipse cx="289" cy="154" rx="4" ry="2.5" fill="#E48A6A" opacity=".55"/>
+
+  <!-- Mom's hands over baby -->
+  <circle cx="247" cy="198" r="9" fill="#B97A56"/>
+  <circle cx="303" cy="198" r="9" fill="#B97A56"/>
+</svg>

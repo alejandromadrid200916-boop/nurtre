@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurtre</title>
+  <meta name="description" content="Nurtre is an evidence-labeled nutrition resource for PCOS: foods, supplements, and what the research actually says.">
+  <meta name="theme-color" content="#f8f4ec">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/home.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <site-header current="home"></site-header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero hero-glow" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow-pill">
+            <span class="eyebrow-pill__icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></svg>
+            </span>
+            Evidence-labeled nutrition for PCOS
+          </p>
+          <h1 class="hero__title" id="hero-title">
+            Nutrition for PCOS, <span class="hero__title-accent">made simple.</span>
+          </h1>
+          <p class="lead hero__lead">
+            Nurtre helps you understand how nutrition, foods, and supplements relate to PCOS, with clear
+            explanations and honest labels for how strong the evidence really is.
+          </p>
+
+          <form class="search" role="search" data-search>
+            <label class="visually-hidden" for="search-input">Ask a question about PCOS nutrition</label>
+            <div class="search__field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input class="search__input" id="search-input" name="q" type="search" placeholder="What do you want to know?" autocomplete="off">
+              <button class="btn btn--primary search__submit" type="submit">Ask</button>
+            </div>
+            <p class="search__status" role="status" data-search-status></p>
+          </form>
+
+          <div class="examples">
+            <p class="examples__label" id="examples-label">Try asking</p>
+            <ul class="chip-list" role="list" aria-labelledby="examples-label">
+              <li><button class="chip" type="button" data-example>What should I eat with PCOS?</button></li>
+              <li><button class="chip" type="button" data-example>Does inositol help PCOS?</button></li>
+              <li><button class="chip" type="button" data-example>Which foods are high in fiber?</button></li>
+              <li><button class="chip" type="button" data-example>Is red meat bad for PCOS?</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <img src="assets/img/hero-plate.svg" alt="" width="560" height="520">
+          <span class="food-tag food-tag--fiber">Fiber</span>
+          <span class="food-tag food-tag--protein">Protein</span>
+          <span class="food-tag food-tag--fats">Healthy fats</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="section" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Explore</p>
+          <h2 id="explore-title">Everything you need, in one calm place</h2>
+          <p class="section-header__text">
+            Start with whatever you're curious about. New sections are on the way.
+          </p>
+        </div>
+        <page-cards pages="pcos,nutrition,lifestyle,foods,supplements,evidence"></page-cards>
+      </div>
+    </section>
+
+    <!-- Evidence levels -->
+    <section class="section section--alt" aria-labelledby="evidence-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How we label evidence</p>
+          <h2 id="evidence-title">Not every finding is equally strong. We'll tell you which is which.</h2>
+          <p class="section-header__text">
+            Nutrition research ranges from firm clinical guidance to early ideas. Content on Nurtre is
+            labeled so you know how much weight each statement deserves.
+          </p>
+        </div>
+        <ul class="evidence-grid" role="list">
+          <li class="card evidence-card">
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+            <p>Reflected in major clinical practice guidelines and supported by consistent evidence.</p>
+          </li>
+          <li class="card evidence-card">
+            <span class="evidence-tag evidence-tag--research">Research finding</span>
+            <p>Seen in controlled studies, but not yet strong or consistent enough to be standard guidance.</p>
+          </li>
+          <li class="card evidence-card">
+            <span class="evidence-tag evidence-tag--association">Association</span>
+            <p>A link observed in population studies. It doesn't show that one thing causes the other.</p>
+          </li>
+          <li class="card evidence-card">
+            <span class="evidence-tag evidence-tag--emerging">Emerging hypothesis</span>
+            <p>An early idea based on limited or preliminary research. Worth watching, not acting on.</p>
+          </li>
+        </ul>
+        <p class="evidence-more">
+          <a class="btn btn--secondary" href="evidence.html">How we choose labels and every source</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="section" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Our approach</p>
+          <h2 id="approach-title">Useful, careful, and clear</h2>
+        </div>
+        <ul class="approach-grid" role="list">
+          <li class="approach-item">
+            <spot-art name="magnifier" tone="sky"></spot-art>
+            <h3>Honest about evidence</h3>
+            <p>We separate clinical guidance from early research and say plainly when something is uncertain.</p>
+          </li>
+          <li class="approach-item">
+            <spot-art name="basket" tone="butter"></spot-art>
+            <h3>Practical, everyday food</h3>
+            <p>Information you can use at the grocery store and in your own kitchen, not rigid rules.</p>
+          </li>
+          <li class="approach-item">
+            <spot-art name="heart" tone="peach"></spot-art>
+            <h3>Supports your care</h3>
+            <p>Nurtre is educational. Use it to have better-informed conversations with your doctor or dietitian.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

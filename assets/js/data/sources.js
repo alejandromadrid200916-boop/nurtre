@@ -1,0 +1,182 @@
+// Every source cited on Nurtre. Single source of truth for each page's Sources list (<source-list page="...">)
+// and the full list on the Evidence page.
+// Each citation was checked in September 2026 against CrossRef or PubMed (DOIs and PMIDs) or the publisher's own page.
+// Add a new source here only after checking it the same way. `pages` uses page ids from site.config.js.
+
+export const SOURCE_GROUPS = [
+  { id: 'guideline', label: 'Guidelines & official guidance', description: 'Recommendations from expert panels and public health agencies after reviewing all the evidence.' },
+  { id: 'data', label: 'Nutrition reference data', description: 'Measured nutrient values and the official rules for describing them.' },
+  { id: 'review', label: 'Reviews & studies', description: 'Systematic reviews, meta-analyses, and individual studies behind specific statements.' },
+];
+
+export const SOURCES = [
+  // --- Guidelines & official guidance ------------------------------------
+  {
+    id: 'teede-2023', group: 'guideline',
+    authors: 'Teede HJ, et al.',
+    title: 'Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome',
+    publication: 'Journal of Clinical Endocrinology & Metabolism', details: '2023;108(10):2447–2469',
+    url: 'https://doi.org/10.1210/clinem/dgad463', linkLabel: 'doi:10.1210/clinem/dgad463',
+    pages: ['pcos', 'nutrition', 'lifestyle', 'foods', 'supplements'],
+    usedFor: 'Our main reference: PCOS diagnosis and long-term risks, lifestyle and nutrition as first-line management, and what the guideline says about inositol and other supplements.',
+  },
+  {
+    id: 'who-pcos', group: 'guideline',
+    authors: 'World Health Organization.',
+    title: 'Polycystic ovary syndrome',
+    publication: 'Fact sheet', details: 'updated 22 January 2026',
+    url: 'https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome', linkLabel: 'who.int',
+    pages: ['pcos'],
+    usedFor: 'How common PCOS is, its main symptoms, and its effects on long-term health.',
+  },
+  {
+    id: 'bull-2020', group: 'guideline',
+    authors: 'Bull FC, et al.',
+    title: 'World Health Organization 2020 guidelines on physical activity and sedentary behaviour',
+    publication: 'British Journal of Sports Medicine', details: '2020;54(24):1451–1462',
+    url: 'https://doi.org/10.1136/bjsports-2020-102955', linkLabel: 'doi:10.1136/bjsports-2020-102955',
+    pages: ['lifestyle'],
+    usedFor: 'Why regular movement and less sitting matter for health.',
+  },
+  {
+    id: 'eshre-2025', group: 'guideline',
+    authors: 'ESHRE Guideline Group on Ovarian Stimulation.',
+    title: 'Guideline on Ovarian Stimulation for IVF/ICSI',
+    publication: 'European Society of Human Reproduction and Embryology', details: 'version 2.2, November 2025',
+    url: 'https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI', linkLabel: 'eshre.eu',
+    pages: ['supplements'],
+    usedFor: 'How add-on treatments during IVF, such as DHEA, are viewed in fertility care.',
+  },
+  {
+    id: 'nih-ods', group: 'guideline',
+    authors: 'National Institutes of Health, Office of Dietary Supplements.',
+    title: 'Dietary Supplement Fact Sheets',
+    publication: 'ods.od.nih.gov', details: 'accessed September 2026',
+    url: 'https://ods.od.nih.gov/factsheets/list-all/', linkLabel: 'ods.od.nih.gov',
+    pages: ['supplements'],
+    usedFor: 'What each vitamin and mineral does, upper limits, interactions with medicines, and safety in pregnancy.',
+  },
+
+  // --- Nutrition reference data ------------------------------------------
+  {
+    id: 'usda-fdc', group: 'data',
+    authors: 'U.S. Department of Agriculture, Agricultural Research Service.',
+    title: 'FoodData Central: SR Legacy',
+    publication: 'fdc.nal.usda.gov', details: 'April 2018 release',
+    url: 'https://fdc.nal.usda.gov/', linkLabel: 'fdc.nal.usda.gov',
+    pages: ['foods'],
+    usedFor: 'Protein, carbs, fat, fiber, vitamins, and minerals for every food, calculated per serving and rounded.',
+  },
+  {
+    id: 'fda-labeling', group: 'data',
+    authors: 'U.S. Food and Drug Administration.',
+    title: 'Food labeling: Daily Values (21 CFR 101.9) and nutrient content claims, including “good source” (21 CFR 101.54)',
+    publication: 'Code of Federal Regulations', details: 'Title 21, Part 101',
+    url: 'https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-D/section-101.54', linkLabel: 'ecfr.gov',
+    pages: ['foods'],
+    usedFor: 'The Daily Values and the 10% rule behind “good source” and “good source of fiber.”',
+  },
+
+  // --- Reviews & studies ---------------------------------------------------
+  {
+    id: 'saeed-2025', group: 'review',
+    authors: 'Muhammed Saeed AA, et al.',
+    title: 'Nutritional and herbal interventions for polycystic ovary syndrome (PCOS): a comprehensive review of dietary approaches, macronutrient impact, and herbal medicine in management',
+    publication: 'Journal of Health, Population and Nutrition', details: '2025;44:143',
+    url: 'https://doi.org/10.1186/s41043-025-00899-y', linkLabel: 'doi:10.1186/s41043-025-00899-y',
+    pages: ['foods', 'supplements'],
+    usedFor: 'Research on fiber and insulin resistance in PCOS, and early studies of herbs and spices such as cinnamon, turmeric, sage, and spearmint.',
+  },
+  {
+    id: 'stepto-2013', group: 'review',
+    authors: 'Stepto NK, et al.',
+    title: 'Women with polycystic ovary syndrome have intrinsic insulin resistance on euglycaemic–hyperinsulaemic clamp',
+    publication: 'Human Reproduction', details: '2013;28(3):777–784',
+    url: 'https://doi.org/10.1093/humrep/des463', linkLabel: 'doi:10.1093/humrep/des463',
+    pages: ['pcos'],
+    usedFor: 'Insulin resistance in PCOS is present at all body sizes, not only with higher weight.',
+  },
+  {
+    id: 'alesi-2022', group: 'review',
+    authors: 'Alesi S, Ee C, Moran LJ, et al.',
+    title: 'Nutritional supplements and complementary therapies in polycystic ovary syndrome',
+    publication: 'Advances in Nutrition', details: '2022;13(4):1243–1266',
+    url: 'https://doi.org/10.1093/advances/nmab141', linkLabel: 'doi:10.1093/advances/nmab141',
+    pages: ['supplements'],
+    usedFor: 'An overview of the supplements studied in PCOS and how strong that evidence is.',
+  },
+  {
+    id: 'pandey-2025', group: 'review',
+    authors: 'Pandey C, et al.',
+    title: 'The role of nutrient supplements in female infertility: an umbrella review and hierarchical evidence synthesis',
+    publication: 'Nutrients', details: '2025;17(1):57',
+    url: 'https://doi.org/10.3390/nu17010057', linkLabel: 'doi:10.3390/nu17010057',
+    pages: ['supplements'],
+    usedFor: 'Why better lab numbers don’t always mean a better chance of live birth, across many fertility supplements.',
+  },
+  {
+    id: 'showell-2020', group: 'review',
+    authors: 'Showell MG, Mackenzie-Proctor R, Jordan V, et al.',
+    title: 'Antioxidants for female subfertility',
+    publication: 'Cochrane Database of Systematic Reviews', details: '2020;8:CD007807',
+    url: 'https://doi.org/10.1002/14651858.CD007807.pub4', linkLabel: 'doi:10.1002/14651858.CD007807.pub4',
+    pages: ['supplements'],
+    usedFor: 'Why antioxidant and fertility blends aren’t recommended for routine use.',
+  },
+  {
+    id: 'lin-2024', group: 'review',
+    authors: 'Lin G, Li X, Lim Jin Yie S, Xu L.',
+    title: 'Clinical evidence of coenzyme Q10 pretreatment for women with diminished ovarian reserve undergoing IVF/ICSI: a systematic review and meta-analysis',
+    publication: 'Annals of Medicine', details: '2024;56(1):2389469',
+    url: 'https://doi.org/10.1080/07853890.2024.2389469', linkLabel: 'doi:10.1080/07853890.2024.2389469',
+    pages: ['supplements'],
+    usedFor: 'CoQ10 before IVF in people with low ovarian reserve.',
+  },
+  {
+    id: 'tang-2025', group: 'review',
+    authors: 'Tang H, Hao J, Xu B, et al.',
+    title: 'Melatonin supplementation and outcomes of assisted reproductive technology: a systematic review and meta-analysis',
+    publication: 'BMC Pregnancy and Childbirth', details: '2025;26:9',
+    url: 'https://doi.org/10.1186/s12884-025-08503-1', linkLabel: 'doi:10.1186/s12884-025-08503-1',
+    pages: ['supplements'],
+    usedFor: 'Melatonin during IVF: some effects on eggs and embryos, but no clear pooled benefit.',
+  },
+  {
+    id: 'devi-2020', group: 'review',
+    authors: 'Devi N, et al.',
+    title: 'N-acetyl-cysteine as adjuvant therapy in female infertility: a systematic review and meta-analysis',
+    publication: 'Journal of Basic and Clinical Physiology and Pharmacology', details: '2020;32(5):899–910',
+    url: 'https://doi.org/10.1515/jbcpp-2020-0107', linkLabel: 'doi:10.1515/jbcpp-2020-0107',
+    pages: ['supplements'],
+    usedFor: 'N-acetylcysteine (NAC) for fertility, where the evidence is still limited.',
+  },
+  {
+    id: 'ardehjani-2024', group: 'review',
+    authors: 'Ardehjani NA, et al.',
+    title: 'Resveratrol ameliorates mitochondrial biogenesis and reproductive outcomes in women with polycystic ovary syndrome undergoing assisted reproduction: a randomized, triple-blind, placebo-controlled clinical trial',
+    publication: 'Journal of Ovarian Research', details: '2024;17(1):143',
+    url: 'https://doi.org/10.1186/s13048-024-01470-9', linkLabel: 'doi:10.1186/s13048-024-01470-9',
+    pages: ['supplements'],
+    usedFor: 'An early trial of resveratrol in PCOS during fertility treatment.',
+  },
+  {
+    id: 'schwarze-2018', group: 'review',
+    authors: 'Schwarze JE, et al.',
+    title: 'DHEA use to improve likelihood of IVF/ICSI success in patients with diminished ovarian reserve: a systematic review and meta-analysis',
+    publication: 'JBRA Assisted Reproduction', details: '2018;22(4):369–374',
+    url: 'https://doi.org/10.5935/1518-0557.20180046', linkLabel: 'doi:10.5935/1518-0557.20180046',
+    pages: ['supplements'],
+    usedFor: 'Why DHEA isn’t recommended for routine use: the results are conflicting.',
+  },
+  {
+    id: 'lima-2022', group: 'review',
+    authors: 'Lima LG, et al.',
+    title: 'Relation between selenium and female fertility: a systematic review',
+    publication: 'Revista Brasileira de Ginecologia e Obstetrícia', details: '2022;44(7):701–709',
+    url: 'https://doi.org/10.1055/s-0042-1744288', linkLabel: 'doi:10.1055/s-0042-1744288',
+    pages: ['supplements'],
+    usedFor: 'Selenium and fertility, and why taking more than you need isn’t helpful.',
+  },
+];
+
+export const getSourcesForPage = (pageId) => SOURCES.filter((source) => source.pages.includes(pageId));

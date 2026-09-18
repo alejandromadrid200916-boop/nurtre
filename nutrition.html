@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition for PCOS | Nurtre</title>
+  <meta name="description" content="Nutrition for PCOS built on small daily steps and whole foods. Learn why nutrition comes first, what it can change, and how to build small, lasting habits.">
+  <meta name="theme-color" content="#f8f4ec">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/nutrition.css">
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/nutrition.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <site-header current="nutrition"></site-header>
+
+  <main id="main">
+    <!-- Page hero -->
+    <section class="page-hero nutrition-hero hero-glow" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li aria-current="page">Nutrition</li>
+            </ol>
+          </nav>
+          <p class="eyebrow-pill">
+            <span class="eyebrow-pill__icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></svg>
+            </span>
+            The heart of PCOS care
+          </p>
+          <h1 id="page-title">Nutrition is your <span class="text-accent">most powerful tool</span> for managing PCOS.</h1>
+          <p class="lead">
+            There's no cure for PCOS, but what you eat every day is one of the most effective ways to manage it.
+            Healthy eating, together with regular activity, is the first-line approach recommended for everyone with
+            PCOS, whether or not you also take medication.
+          </p>
+          <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="#why">See why nutrition comes first</a>
+            <a class="btn btn--secondary" href="#small-steps">Start with small steps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- On this page -->
+    <nav class="page-toc" aria-label="On this page">
+      <div class="container">
+        <ul class="page-toc__list" role="list">
+          <li><a href="#why">Why it works</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#basics">How to eat</a></li>
+          <li><a href="#small-steps">Small steps</a></li>
+          <li><a href="#myths">Myths</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Why nutrition comes first -->
+    <section class="section section--dark why-statement" id="why" aria-labelledby="why-title">
+      <div class="container why-statement__inner">
+        <p class="eyebrow">Why nutrition comes first</p>
+        <h2 id="why-title">Food can help break the insulin cycle</h2>
+        <p class="why-statement__text">
+          For many people with PCOS, insulin resistance sets off a chain reaction through the body's hormones.
+          Everyday eating habits act on the very first link in that chain: steadier blood sugar means the body needs
+          less insulin, which can mean fewer androgens and fewer symptoms over time.
+        </p>
+        <span class="evidence-tag evidence-tag--research">Research finding</span>
+        <p class="why-statement__note">
+          <strong>Consistency is what makes it work.</strong> These changes build over weeks and months, so lasting
+          habits matter more than quick fixes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">What it can change</p>
+          <h2 id="benefits-title">One change, benefits across your whole body</h2>
+          <p class="section-header__text">
+            Because PCOS is a metabolic condition, improving how you eat reaches far beyond the scale.
+          </p>
+        </div>
+
+        <ul class="benefit-grid" role="list">
+          <li class="card benefit-card benefit-card--featured">
+            <spot-art name="glucose" tone="peach"></spot-art>
+            <span class="badge">Where it all starts</span>
+            <h3>Insulin &amp; blood sugar</h3>
+            <p>Improves how your body handles insulin and blood sugar, a central driver of many PCOS symptoms.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="card benefit-card">
+            <spot-art name="calendar" tone="butter"></spot-art>
+            <h3>Cycles &amp; ovulation</h3>
+            <p>Can support more regular periods and ovulation, especially with modest weight loss for those carrying extra weight.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="card benefit-card">
+            <spot-art name="sparkle" tone="lavender"></spot-art>
+            <h3>Skin &amp; hair</h3>
+            <p>Lower insulin and androgen levels may ease acne and excess hair growth over time.</p>
+            <span class="evidence-tag evidence-tag--research">Research finding</span>
+          </li>
+          <li class="card benefit-card">
+            <spot-art name="balance" tone="sage"></spot-art>
+            <h3>Weight</h3>
+            <p>Supports sustainable weight management. For those with excess weight, losing 5–10% can bring meaningful improvements.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="card benefit-card">
+            <spot-art name="heart" tone="sky"></spot-art>
+            <h3>Long-term health</h3>
+            <p>Helps lower risk factors for type 2 diabetes and heart disease, which are more common with PCOS.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- The basics -->
+    <section class="section section--alt" id="basics" aria-labelledby="basics-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How to eat for PCOS</p>
+          <h2 id="basics-title">Two ideas to build everything on</h2>
+          <p class="section-header__text">
+            You don't need a strict plan. Keep coming back to these two ideas, and let the details follow.
+          </p>
+        </div>
+
+        <ul class="pillars" role="list">
+          <li class="card pillar pillar--steps">
+            <spot-art name="steps" tone="butter"></spot-art>
+            <h3>Small steps, every day</h3>
+            <p>
+              You don't have to change everything from one day to the next. One small change, repeated, becomes a
+              habit, and habits are what add up over time.
+            </p>
+            <ul class="check-list" role="list">
+              <li>Add one vegetable to a meal today</li>
+              <li>Make one swap this week</li>
+              <li>Keep what works, then build on it</li>
+            </ul>
+            <p class="pillar__quote">Consistency matters more than perfection.</p>
+          </li>
+          <li class="card pillar pillar--whole">
+            <spot-art name="basket" tone="sage"></spot-art>
+            <h3>Whole foods first</h3>
+            <p>
+              Build most of your meals from whole and minimally processed foods: foods that look close to how they
+              came from nature.
+            </p>
+            <ul class="food-chips" role="list">
+              <li><span aria-hidden="true">🥬</span>Leafy greens</li>
+              <li><span aria-hidden="true">🥕</span>Vegetables</li>
+              <li><span aria-hidden="true">🍎</span>Whole fruit</li>
+              <li><span aria-hidden="true">🌾</span>Whole grains</li>
+              <li><span aria-hidden="true">🫘</span>Beans</li>
+              <li><span aria-hidden="true">🍗</span>Lean proteins</li>
+              <li><span aria-hidden="true">🐟</span>Fish</li>
+              <li><span aria-hidden="true">🥜</span>Nuts &amp; seeds</li>
+            </ul>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Habits that help along the way</h3>
+        <ul class="support-grid" role="list">
+          <li class="card support-card">
+            <spot-art name="clock" tone="sky"></spot-art>
+            <h3>Keep meals regular</h3>
+            <p>Aim for regular meals and a consistent eating pattern through the week, instead of switching between restrictive diets.</p>
+          </li>
+          <li class="card support-card">
+            <spot-art name="pair" tone="mint"></spot-art>
+            <h3>Pair your carbs</h3>
+            <p>Pair carbohydrates with protein, fiber, or healthy fats to slow digestion and help manage blood sugar.</p>
+            <span class="evidence-tag evidence-tag--research">Research finding</span>
+          </li>
+          <li class="card support-card">
+            <spot-art name="balance" tone="butter"></spot-art>
+            <h3>Skip the extremes</h3>
+            <p>No cutting out whole food groups or chasing trends. Weight loss can help some people with PCOS, but it should come from sustainable habits, not extreme restriction.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+          <li class="card support-card">
+            <spot-art name="sparkle" tone="lavender"></spot-art>
+            <h3>Make it yours</h3>
+            <p>There's no single best diet for PCOS. Find an eating pattern that fits your lifestyle, preferences, and goals.</p>
+            <span class="evidence-tag evidence-tag--established">Established guidance</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Small steps planner -->
+    <section class="section" id="small-steps" aria-labelledby="small-steps-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Try it</p>
+          <h2 id="small-steps-title">Pick a few small steps for this week</h2>
+          <p class="section-header__text">
+            Tap the habits you'd like to try. You don't need all of them, and you don't need to start them all at once.
+          </p>
+        </div>
+
+        <div class="planner-layout">
+          <ul class="habit-list" role="list" data-habit-list></ul>
+
+          <aside class="card planner" aria-labelledby="planner-title">
+            <div class="planner__ring">
+              <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <circle class="ring-track" cx="32" cy="32" r="28"/>
+                <circle class="ring-fill" cx="32" cy="32" r="28" pathLength="100" data-habit-ring/>
+              </svg>
+              <span class="planner__count" data-habit-count>0</span>
+            </div>
+            <h3 id="planner-title">Your week</h3>
+            <p class="planner__message" aria-live="polite" data-habit-message></p>
+            <ul class="planner__picked" role="list" data-habit-picked></ul>
+            <button class="btn btn--secondary planner__clear" type="button" data-habit-clear hidden>Start over</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Myths -->
+    <section class="section section--alt myths-section" id="myths" aria-labelledby="myths-title">
+      <div class="container">
+        <div class="section-header myths-header">
+          <p class="eyebrow">Myth or fact?</p>
+          <h2 id="myths-title">Let go of these diet myths</h2>
+          <p class="section-header__text">Tap each card to flip it and see what the evidence says.</p>
+          <p class="myth-legend" aria-hidden="true">
+            <span class="myth-legend__item myth-legend__item--myth">✕ Myth</span>
+            <span class="myth-legend__arrow">tap to flip ↻</span>
+            <span class="myth-legend__item myth-legend__item--fact">✓ Fact</span>
+          </p>
+        </div>
+
+        <ul class="myth-grid" role="list">
+          <li>
+            <button class="myth myth--peach" type="button" aria-pressed="false" data-myth>
+              <span class="myth__inner">
+                <span class="myth__face myth__front">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✕</span> Myth</span><span class="myth__num" aria-hidden="true">01</span></span>
+                  <span class="myth__art" aria-hidden="true">🍞</span>
+                  <span class="myth__text">You have to cut out carbs.</span>
+                  <span class="myth__hint">Tap to see the facts</span>
+                </span>
+                <span class="myth__face myth__back">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✓</span> Fact</span><span class="myth__num" aria-hidden="true">01</span></span>
+                  <span class="myth__text">Whole-food carbs like beans, oats, fruit, and whole grains can fit well. Choosing whole sources and pairing them matters more than cutting them out.</span>
+                  <span class="evidence-tag evidence-tag--established">Established guidance</span>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="myth myth--butter" type="button" aria-pressed="false" data-myth>
+              <span class="myth__inner">
+                <span class="myth__face myth__front">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✕</span> Myth</span><span class="myth__num" aria-hidden="true">02</span></span>
+                  <span class="myth__art" aria-hidden="true">📋</span>
+                  <span class="myth__text">There's one perfect PCOS diet.</span>
+                  <span class="myth__hint">Tap to see the facts</span>
+                </span>
+                <span class="myth__face myth__back">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✓</span> Fact</span><span class="myth__num" aria-hidden="true">02</span></span>
+                  <span class="myth__text">No single eating pattern has been shown to be best for PCOS. The best plan is one you can stick with.</span>
+                  <span class="evidence-tag evidence-tag--established">Established guidance</span>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="myth myth--lavender" type="button" aria-pressed="false" data-myth>
+              <span class="myth__inner">
+                <span class="myth__face myth__front">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✕</span> Myth</span><span class="myth__num" aria-hidden="true">03</span></span>
+                  <span class="myth__art" aria-hidden="true">⚡</span>
+                  <span class="myth__text">You need to change everything at once.</span>
+                  <span class="myth__hint">Tap to see the facts</span>
+                </span>
+                <span class="myth__face myth__back">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✓</span> Fact</span><span class="myth__num" aria-hidden="true">03</span></span>
+                  <span class="myth__text">Small, consistent changes are easier to keep, and the habits you keep are the ones that add up.</span>
+                  <span class="evidence-tag evidence-tag--research">Research finding</span>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="myth myth--sky" type="button" aria-pressed="false" data-myth>
+              <span class="myth__inner">
+                <span class="myth__face myth__front">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✕</span> Myth</span><span class="myth__num" aria-hidden="true">04</span></span>
+                  <span class="myth__art" aria-hidden="true">⚖️</span>
+                  <span class="myth__text">Extreme restriction is the fastest way to results.</span>
+                  <span class="myth__hint">Tap to see the facts</span>
+                </span>
+                <span class="myth__face myth__back">
+                  <span class="myth__top"><span class="myth__label"><span aria-hidden="true">✓</span> Fact</span><span class="myth__num" aria-hidden="true">04</span></span>
+                  <span class="myth__text">Weight loss can help some people with PCOS, but it should come from sustainable habits, not extreme diets or cutting out food groups.</span>
+                  <span class="evidence-tag evidence-tag--established">Established guidance</span>
+                </span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Next steps -->
+    <section class="section" aria-labelledby="next-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Keep going</p>
+          <h2 id="next-title">Put it into practice</h2>
+        </div>
+        <page-cards pages="foods,supplements,lifestyle"></page-cards>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="section section--compact section--alt" aria-labelledby="sources-title">
+      <div class="container sources">
+        <h2 class="sources__title" id="sources-title">Sources</h2>
+        <source-list page="nutrition"></source-list>
+        <p class="sources__note">This page is for education and doesn't replace advice from your doctor or dietitian. Last updated September 2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" fill="none">
+  <!-- Calm rings -->
+  <circle cx="240" cy="226" r="186" fill="#ECE8F2"/>
+  <circle cx="240" cy="226" r="150" fill="#F4F1F7"/>
+  <circle cx="240" cy="226" r="112" stroke="#D8D1E0" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- Floating leaves & bubbles -->
+  <path d="M84 120c4-22 24-34 44-30-4 22-24 34-44 30Z" fill="#8DB57F"/>
+  <path d="M84 120l40-28" stroke="#6E9B63" stroke-width="2" stroke-linecap="round"/>
+  <path d="M396 150c-2-20 12-36 32-38 2 20-12 36-32 38Z" fill="#A9C79B"/>
+  <path d="M368 318c-4-16 6-30 22-34 4 16-6 30-22 34Z" fill="#8DB57F"/>
+  <circle cx="148" cy="70" r="7" fill="#fff"/>
+  <circle cx="330" cy="80" r="10" fill="#fff"/>
+  <circle cx="356" cy="56" r="5" fill="#fff"/>
+  <path d="M100 290l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#F2CF63"/>
+  <path d="M400 230l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5Z" fill="#8E86B5"/>
+
+  <!-- Person meditating -->
+  <ellipse cx="240" cy="382" rx="110" ry="10" fill="#1D3A2C" opacity=".07"/>
+  <path d="M210 190c-4-40 12-54 30-54s34 14 30 54l6 56c-14-6-58-6-72 0Z" fill="#2A1D17"/>
+  <ellipse cx="240" cy="344" rx="98" ry="28" fill="#4E7C8C"/>
+  <ellipse cx="168" cy="350" rx="15" ry="9" fill="#C98F6B"/>
+  <ellipse cx="312" cy="350" rx="15" ry="9" fill="#C98F6B"/>
+  <path d="M200 340c-4-46 2-86 16-100h48c14 14 20 54 16 100Z" fill="#F2CF63"/>
+  <path d="M218 250q-32 44-42 72M262 250q32 44 42 72" stroke="#C98F6B" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="174" cy="326" r="10" fill="#C98F6B"/>
+  <circle cx="306" cy="326" r="10" fill="#C98F6B"/>
+  <circle cx="174" cy="326" r="3.5" fill="#A36F4E"/>
+  <circle cx="306" cy="326" r="3.5" fill="#A36F4E"/>
+  <rect x="232" y="206" width="16" height="36" rx="7" fill="#C98F6B"/>
+  <circle cx="240" cy="184" r="27" fill="#C98F6B"/>
+  <path d="M213 182c-1-24 13-32 27-32 16 0 28 10 27 32-9-14-17-18-27-18-12 0-20 6-27 18Z" fill="#2A1D17"/>
+  <path d="M226 188q6 5 12 0M244 188q6 5 12 0" stroke="#2A1D17" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M233 199q7 5 14 0" stroke="#2A1D17" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="222" cy="197" rx="5" ry="3" fill="#E48A6A" opacity=".5"/>
+  <ellipse cx="258" cy="197" rx="5" ry="3" fill="#E48A6A" opacity=".5"/>
+
+  <!-- Heart -->
+  <path d="M240 108c-4-7-15-4-12 4 2 5 12 12 12 12s10-7 12-12c3-8-8-11-12-4Z" fill="#EE9C78"/>
+</svg>

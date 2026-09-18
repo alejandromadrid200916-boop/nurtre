@@ -1,0 +1,239 @@
+/* ==========================================================================
+   PCOS page
+   ========================================================================== */
+
+html {
+  scroll-padding-top: calc(var(--header-h) + 4.5rem); /* header + on-page nav */
+}
+
+/* --- Key facts ----------------------------------------------------------- */
+
+.key-facts {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.key-facts__title {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.key-fact {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2);
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.key-fact:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.key-fact:last-child {
+  padding-bottom: 0;
+}
+
+.key-fact__value {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-green-700);
+}
+
+.key-fact__text {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* --- Definition ---------------------------------------------------------- */
+
+.intro-grid {
+  display: grid;
+  align-items: start;
+  gap: var(--space-10);
+}
+
+.intro-aside {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 64rem) {
+  .intro-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: var(--space-16);
+  }
+
+  .intro-aside {
+    margin-top: var(--space-16);
+  }
+}
+
+/* --- Body systems -------------------------------------------------------- */
+
+.body-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-5);
+}
+
+.body-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+  padding: var(--space-6);
+}
+
+.body-card--featured {
+  background: var(--color-sage-50);
+  border-color: var(--color-sage-200);
+}
+
+@media (min-width: 48rem) {
+  .body-card--featured {
+    grid-column: span 2;
+  }
+}
+
+.body-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.body-card__header > div {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-1);
+}
+
+.body-card spot-art {
+  --spot-size: 3.25rem;
+}
+
+.body-card > p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.body-card ul {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.body-card li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.body-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 50%;
+  background: var(--color-sage-400);
+}
+
+.body-card--featured li::before {
+  background: var(--color-clay-600);
+}
+
+/* --- Long-term risks ----------------------------------------------------- */
+
+.risk-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.risk-row {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-6);
+}
+
+.risk-row h3 {
+  font-size: 1.0625rem;
+}
+
+.risk-row p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 48rem) {
+  .risk-row {
+    grid-template-columns: minmax(0, 13rem) minmax(0, 1fr) 11rem;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .risk-row .evidence-tag {
+    justify-self: end;
+  }
+}
+
+/* --- Diagnosis ----------------------------------------------------------- */
+
+#diagnosis .section-header,
+#nutrition .section-header {
+  justify-items: start;
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-5);
+}
+
+.criteria-card {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: var(--space-3);
+  padding: var(--space-6);
+}
+
+.criteria-card p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.criteria-card__number {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--color-sage-100);
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-green-700);
+}
+
+.diagnosis-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
