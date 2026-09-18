@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alejandromadrid200916-boop.github.io/nurtre/sitemap.xml
