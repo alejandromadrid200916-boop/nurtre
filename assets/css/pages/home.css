@@ -34,23 +34,6 @@
   max-width: 38rem;
 }
 
-.hero .search {
-  margin-top: var(--space-2);
-}
-
-.examples {
-  display: grid;
-  justify-items: center;
-  gap: var(--space-3);
-  max-width: 44rem;
-}
-
-.examples__label {
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--color-text-subtle);
-}
-
 /* Illustration with floating food-group labels */
 .hero__art {
   position: relative;
@@ -136,14 +119,6 @@
   .hero__content {
     align-items: flex-start;
     text-align: left;
-  }
-
-  .hero .examples {
-    justify-items: start;
-  }
-
-  .hero .chip-list {
-    justify-content: flex-start;
   }
 
   .hero__art {
